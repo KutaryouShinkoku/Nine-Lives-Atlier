@@ -1,0 +1,45 @@
+
+[*]
+
+# Microsoft .NET properties
+csharp_new_line_before_members_in_object_initializers = false
+csharp_preferred_modifier_order = protected, internal, private, public, file, new, override, virtual, static, abstract, sealed, readonly, extern, unsafe, volatile, async, required:suggestion
+csharp_preserve_single_line_blocks = true
+csharp_style_namespace_declarations = block_scoped:suggestion
+
+# ReSharper properties
+resharper_blank_lines_after_block_statements = 0
+resharper_blank_lines_around_local_method = 0
+resharper_blank_lines_around_property = 0
+resharper_blank_lines_around_single_line_type = 0
+resharper_braces_for_ifelse = not_required
+resharper_braces_redundant = false
+resharper_csharp_blank_lines_around_field = 0
+resharper_csharp_blank_lines_around_invocable = 0
+resharper_csharp_blank_lines_around_type = 0
+resharper_csharp_indent_invocation_pars = outside
+resharper_csharp_keep_blank_lines_in_code = 100
+resharper_csharp_keep_existing_enum_arrangement = false
+resharper_csharp_max_line_length = 148
+resharper_csharp_remove_blank_lines_near_braces_in_code = false
+resharper_csharp_remove_blank_lines_near_braces_in_declarations = false
+resharper_csharp_wrap_after_declaration_lpar = true
+resharper_csharp_wrap_before_ternary_opsigns = false
+resharper_csharp_wrap_parameters_style = chop_if_long
+resharper_csharp_wrap_ternary_expr_style = wrap_if_long
+resharper_indent_nested_foreach_stmt = true
+resharper_indent_preprocessor_if = do_not_change
+resharper_indent_preprocessor_other = do_not_change
+resharper_instance_members_qualify_declared_in = 
+resharper_keep_existing_attribute_arrangement = true
+resharper_keep_existing_declaration_block_arrangement = false
+resharper_parentheses_redundancy_style = remove
+resharper_place_expr_accessor_on_single_line = true
+resharper_place_expr_method_on_single_line = true
+resharper_place_expr_property_on_single_line = true
+resharper_place_field_attribute_on_same_line = false
+resharper_place_simple_embedded_statement_on_same_line = false
+resharper_place_simple_initializer_on_single_line = false
+resharper_space_within_empty_braces = false
+resharper_wrap_chained_binary_expressions = chop_if_long
+resharper_wrap_object_and_collection_initializer_style = chop_always

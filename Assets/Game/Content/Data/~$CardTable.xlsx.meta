@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 0ee24a9d60fbcab41972d5bc89ad8105
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 26e322b9a173496bb08b93fbd95d4d80, type: 3}
+  dataTableScript: {instanceID: 0}
+  namespace: Game.Data

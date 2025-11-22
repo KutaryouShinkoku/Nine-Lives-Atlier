@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:TextField picking-mode="Ignore" value="filler text" multiline="true" name="CodeHistoryText" text="Example:&#10;&#x9;Help()&#10;&#x9;Debug.Log(&quot;Test&quot;)&#10;&#x9;EntitySystem.Instance.CreateEntity(&quot;123&quot;, 1, &quot;123&quot;)&#10;&#x9;......" readonly="true" style="flex-shrink: 0; flex-direction: row; flex-wrap: nowrap; flex-grow: 1;" />
+    <ui:VisualElement style="flex-direction: row;">
+        <ui:Label text="&gt; " display-tooltip-when-elided="true" />
+        <ui:TextField picking-mode="Ignore" value="filler text" multiline="false" name="CodeText" tooltip="Input c# code here" is-delayed="false" style="flex-shrink: 0; flex-direction: row; flex-wrap: nowrap; flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>

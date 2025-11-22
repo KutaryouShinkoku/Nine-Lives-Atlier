@@ -1,0 +1,164 @@
+{
+  "EffectiveMaxHandCards": 5,
+  "PlayerModel": {
+    "Buffs": [],
+    "Health": 99,
+    "MaxHealth": 0,
+    "Resources": {
+      "Fire": 0,
+      "Water": 0,
+      "Earth": 0,
+      "Air": 0,
+      "TotalCost": 0
+    },
+    "CharacterId": "Fire"
+  },
+  "EnemyModel": {
+    "enemyBuffs": [],
+    "Health": 15,
+    "Attack": 1,
+    "Reward": 0,
+    "Attempt": "None",
+    "EnemyId": "Test"
+  },
+  "HandCards": [
+    {
+      "Id": "F04",
+      "FeeChange": {
+        "Fire": 0,
+        "Water": 0,
+        "Earth": 0,
+        "Air": 0,
+        "TotalCost": 0
+      },
+      "AdditionEffectVal1": 0,
+      "AdditionEffectVal2": 0,
+      "AdditionEffectVal3": 0
+    },
+    {
+      "Id": "F02",
+      "FeeChange": {
+        "Fire": 0,
+        "Water": 0,
+        "Earth": 0,
+        "Air": 0,
+        "TotalCost": 0
+      },
+      "AdditionEffectVal1": 0,
+      "AdditionEffectVal2": 0,
+      "AdditionEffectVal3": 0
+    },
+    {
+      "Id": "F04",
+      "FeeChange": {
+        "Fire": 0,
+        "Water": 0,
+        "Earth": 0,
+        "Air": 0,
+        "TotalCost": 0
+      },
+      "AdditionEffectVal1": 0,
+      "AdditionEffectVal2": 0,
+      "AdditionEffectVal3": 0
+    }
+  ],
+  "DiscardCards": [],
+  "RemainCards": [
+    {
+      "Id": "F07",
+      "FeeChange": {
+        "Fire": 0,
+        "Water": 0,
+        "Earth": 0,
+        "Air": 0,
+        "TotalCost": 0
+      },
+      "AdditionEffectVal1": 0,
+      "AdditionEffectVal2": 0,
+      "AdditionEffectVal3": 0
+    },
+    {
+      "Id": "F01",
+      "FeeChange": {
+        "Fire": 0,
+        "Water": 0,
+        "Earth": 0,
+        "Air": 0,
+        "TotalCost": 0
+      },
+      "AdditionEffectVal1": 0,
+      "AdditionEffectVal2": 0,
+      "AdditionEffectVal3": 0
+    },
+    {
+      "Id": "F01",
+      "FeeChange": {
+        "Fire": 0,
+        "Water": 0,
+        "Earth": 0,
+        "Air": 0,
+        "TotalCost": 0
+      },
+      "AdditionEffectVal1": 0,
+      "AdditionEffectVal2": 0,
+      "AdditionEffectVal3": 0
+    },
+    {
+      "Id": "F01",
+      "FeeChange": {
+        "Fire": 0,
+        "Water": 0,
+        "Earth": 0,
+        "Air": 0,
+        "TotalCost": 0
+      },
+      "AdditionEffectVal1": 0,
+      "AdditionEffectVal2": 0,
+      "AdditionEffectVal3": 0
+    },
+    {
+      "Id": "F05",
+      "FeeChange": {
+        "Fire": 0,
+        "Water": 0,
+        "Earth": 0,
+        "Air": 0,
+        "TotalCost": 0
+      },
+      "AdditionEffectVal1": 0,
+      "AdditionEffectVal2": 0,
+      "AdditionEffectVal3": 0
+    },
+    {
+      "Id": "F05",
+      "FeeChange": {
+        "Fire": 0,
+        "Water": 0,
+        "Earth": 0,
+        "Air": 0,
+        "TotalCost": 0
+      },
+      "AdditionEffectVal1": 0,
+      "AdditionEffectVal2": 0,
+      "AdditionEffectVal3": 0
+    },
+    {
+      "Id": "F01",
+      "FeeChange": {
+        "Fire": 0,
+        "Water": 0,
+        "Earth": 0,
+        "Air": 0,
+        "TotalCost": 0
+      },
+      "AdditionEffectVal1": 0,
+      "AdditionEffectVal2": 0,
+      "AdditionEffectVal3": 0
+    }
+  ],
+  "BattleLogs": [],
+  "AdditionalMaxHandCount": 0,
+  "DrawCardReduction": 0,
+  "DrawCardIncrease": 0,
+  "Turn": 0
+}

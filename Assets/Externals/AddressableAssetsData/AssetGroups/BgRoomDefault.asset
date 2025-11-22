@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: BgRoomDefault
+  m_EditorClassIdentifier: 
+  m_GroupName: BgRoomDefault
+  m_GUID: 43a092a19b9813e48b49daf7fbced6db
+  m_SerializeEntries:
+  - m_GUID: 48bf7c593fbbb0d4bb403493b1a88a6d
+    m_Address: Content/Scene/BgRoomDefault
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 62fdfb48827869a4da2ab9d7157a874d
+    m_Address: Content/Scene/BgRoomDefault.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 2bb6f4dce49cb3d49a3a4b8a5d1bb2e4, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: ca9c9aee42d4d3344b573a0f62006528, type: 2}
