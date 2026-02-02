@@ -37,183 +37,183 @@ namespace Game.Data {
         
         Test = 11,
         
-        Tutorial_Setup_BranchTest_1 = 12,
+        Tutorial_Setup_InitialCards_1 = 12,
         
-        Tutorial_Setup_BranchTest_2 = 13,
+        Tutorial_Setup_InitialCards_2 = 13,
         
-        BranchTest_1 = 14,
+        Tutorial_Setup_InitialCards_3 = 14,
         
-        BranchTest_1_Root = 15,
+        Tutorial_1 = 15,
         
-        Tutorial_Setup_InitialCards_1 = 16,
+        Tutorial_2 = 16,
         
-        Tutorial_Setup_InitialCards_2 = 17,
+        Tutorial_3 = 17,
         
-        Tutorial_Setup_InitialCards_3 = 18,
+        Tutorial_4 = 18,
         
-        Tutorial_1 = 19,
+        Tutorial_5 = 19,
         
-        Tutorial_2 = 20,
+        Tutorial_6 = 20,
         
-        Tutorial_3 = 21,
+        Tutorial_7 = 21,
         
-        Tutorial_4 = 22,
+        Tutorial_8 = 22,
         
-        Tutorial_5 = 23,
+        Tutorial_9 = 23,
         
-        Tutorial_6 = 24,
+        Tutorial_10 = 24,
         
-        Tutorial_7 = 25,
+        Tutorial_11 = 25,
         
-        Tutorial_8 = 26,
+        Tutorial_11_CardDesc_1 = 26,
         
-        Tutorial_9 = 27,
+        Tutorial_11_CardDesc_2 = 27,
         
-        Tutorial_10 = 28,
+        Tutorial_11_CardDesc_3 = 28,
         
-        Tutorial_11 = 29,
+        Tutorial_12 = 29,
         
-        Tutorial_11_CardDesc_1 = 30,
+        Tutorial_12_Sacrifice = 30,
         
-        Tutorial_11_CardDesc_2 = 31,
+        Tutorial_12_Elements = 31,
         
-        Tutorial_11_CardDesc_3 = 32,
+        Tutorial_12_Wait = 32,
         
-        Tutorial_12 = 33,
+        Tutorial_12_AddHP = 33,
         
-        Tutorial_12_Sacrifice = 34,
+        Tutorial_12_AddATK = 34,
         
-        Tutorial_12_Elements = 35,
+        Tutorial_12_AddReward = 35,
         
-        Tutorial_12_Wait = 36,
+        Tutorial_12_Wait_2 = 36,
         
-        Tutorial_12_AddHP = 37,
+        Tutorial_13 = 37,
         
-        Tutorial_12_AddATK = 38,
+        Tutorial_14 = 38,
         
-        Tutorial_12_AddReward = 39,
+        Tutorial_15_CardDetail_1 = 39,
         
-        Tutorial_12_Wait_2 = 40,
+        Tutorial_15_CardDetail_2 = 40,
         
-        Tutorial_13 = 41,
+        Tutorial_15 = 41,
         
-        Tutorial_14 = 42,
+        Tutorial_15_Addition = 42,
         
-        Tutorial_15_CardDetail_1 = 43,
+        Tutorial_15_Attack_Message = 43,
         
-        Tutorial_15_CardDetail_2 = 44,
+        Tutorial_15_Attack = 44,
         
-        Tutorial_15 = 45,
+        Tutorial_15_Attack_2 = 45,
         
-        Tutorial_15_Addition = 46,
+        Tutorial_15_Wait = 46,
         
-        Tutorial_15_Attack_Message = 47,
+        Tutorial_16 = 47,
         
-        Tutorial_15_Attack = 48,
+        Tutorial_17 = 48,
         
-        Tutorial_15_Attack_2 = 49,
+        Tutorial_20 = 49,
         
-        Tutorial_15_Wait = 50,
+        Tutorial_21 = 50,
         
-        Tutorial_16 = 51,
+        Tutorial_21_PlayUseCard = 51,
         
-        Tutorial_17 = 52,
+        Tutorial_21_Wait = 52,
         
-        Tutorial_20 = 53,
+        Tutorial_21_Effects = 53,
         
-        Tutorial_21 = 54,
+        Tutorial_21_Attack_1 = 54,
         
-        Tutorial_21_PlayUseCard = 55,
+        Tutorial_21_Attack_2 = 55,
         
-        Tutorial_21_Wait = 56,
+        Tutorial_21_Attack_3 = 56,
         
-        Tutorial_21_Effects = 57,
+        Tutorial_21_Attack_4 = 57,
         
-        Tutorial_21_Attack_1 = 58,
+        Tutorial_21_Attack_5 = 58,
         
-        Tutorial_21_Attack_2 = 59,
+        Tutorial_21_Attack_6 = 59,
         
-        Tutorial_21_Attack_3 = 60,
+        Tutorial_21_Attack_7 = 60,
         
-        Tutorial_21_Attack_4 = 61,
+        Tutorial_21_Wait2 = 61,
         
-        Tutorial_21_Attack_5 = 62,
+        Tutorial_22 = 62,
         
-        Tutorial_21_Attack_6 = 63,
+        Tutorial_21_EnemyAttack = 63,
         
-        Tutorial_21_Attack_7 = 64,
+        Tutorial_21_EnemyAttack_2 = 64,
         
-        Tutorial_21_Wait2 = 65,
+        Tutorial_21_Wait3 = 65,
         
-        Tutorial_22 = 66,
+        Tutorial_23_Start = 66,
         
-        Tutorial_21_EnemyAttack = 67,
+        Tutorial_23_1 = 67,
         
-        Tutorial_21_EnemyAttack_2 = 68,
+        Tutorial_23_2 = 68,
         
-        Tutorial_21_Wait3 = 69,
+        Tutorial_23_Draw = 69,
         
-        Tutorial_23_Start = 70,
+        Tutorial_23_Wait_1 = 70,
         
-        Tutorial_23_1 = 71,
+        Tutorial_23_Draw_3 = 71,
         
-        Tutorial_23_2 = 72,
+        Tutorial_23_Draw_4 = 72,
         
-        Tutorial_23_Draw = 73,
+        Tutorial_23_Draw_2 = 73,
         
-        Tutorial_23_Wait_1 = 74,
+        Tutorial_23_Attack = 74,
         
-        Tutorial_23_Draw_3 = 75,
+        Tutorial_23_Attack_2 = 75,
         
-        Tutorial_23_Draw_4 = 76,
+        Tutorial_23_Wait_2 = 76,
         
-        Tutorial_23_Draw_2 = 77,
+        Tutorial_27 = 77,
         
-        Tutorial_23_Attack = 78,
+        Tutorial_18 = 78,
         
-        Tutorial_23_Attack_2 = 79,
+        Tutorial_19 = 79,
         
-        Tutorial_23_Wait_2 = 80,
+        Tutorial_24 = 80,
         
-        Tutorial_27 = 81,
+        Tutorial_25 = 81,
         
-        Tutorial_18 = 82,
+        Tutorial_26 = 82,
         
-        Tutorial_19 = 83,
+        Tutorial_End = 83,
         
-        Tutorial_24 = 84,
+        Tutorial_12_Branch = 84,
         
-        Tutorial_25 = 85,
+        Tutorial_Branch1_Beg = 85,
         
-        Tutorial_26 = 86,
+        Tutorial_Branch1_Msg = 86,
         
-        Tutorial_End = 87,
+        Tutorial_Branch1_End = 87,
         
-        Tutorial_12_Branch = 88,
+        Tutorial_Branch2_Beg = 88,
         
-        Tutorial_Branch1_Beg = 89,
+        Tutorial_Branch2_Msg = 89,
         
-        Tutorial_Branch1_Msg = 90,
+        Tutorial_Branch2_PlaySacrificeCard = 90,
         
-        Tutorial_Branch1_End = 91,
+        Tutorial_Branch2_InitialCards_5 = 91,
         
-        Tutorial_Branch2_Beg = 92,
+        Tutorial_Branch2_End = 92,
         
-        Tutorial_Branch2_Msg = 93,
+        BranchTest1_Beg = 93,
         
-        Tutorial_Branch2_PlaySacrificeCard = 94,
+        BranchTest1_End = 94,
         
-        Tutorial_Branch2_InitialCards_5 = 95,
+        BranchTest2_Beg = 95,
         
-        Tutorial_Branch2_End = 96,
+        BranchTest2_End = 96,
         
-        BranchTest1_Beg = 97,
+        Tutorial_Setup_BranchTest_1 = 97,
         
-        BranchTest1_End = 98,
+        Tutorial_Setup_BranchTest_2 = 98,
         
-        BranchTest2_Beg = 99,
+        BranchTest_1 = 99,
         
-        BranchTest2_End = 100,
+        BranchTest_1_Root = 100,
         
         Tutorial_MainMenu_Begin = 101,
         

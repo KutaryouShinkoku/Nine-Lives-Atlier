@@ -95,13 +95,17 @@ namespace Game.Data {
         
         Card_Focus = 40,
         
-        Lable_Fragile = 41,
+        Card_Tailwind = 41,
         
-        Lable_Toxic = 42,
+        Card_Windborne = 42,
         
-        Lable_HighTemp = 43,
+        Lable_Fragile = 43,
         
-        Lable_MagicLock = 44,
+        Lable_Toxic = 44,
+        
+        Lable_HighTemp = 45,
+        
+        Lable_MagicLock = 46,
     }
     
     #region 

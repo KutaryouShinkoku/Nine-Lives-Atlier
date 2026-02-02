@@ -112,6 +112,8 @@ namespace Game.Data {
         Draw_Focus = 48,
         
         Damage_Focus = 49,
+        
+        Damage_Windborne = 50,
     }
     
     #region 

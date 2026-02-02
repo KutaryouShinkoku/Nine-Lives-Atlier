@@ -281,6 +281,11 @@ namespace Game.Logic
             var drawnCard = battleModel.RemainCards[0];
             battleModel.RemainCards.RemoveAt(0);
             battleModel.HandCards.Add(drawnCard);
+            
+            //清除乘风
+            battleModel.PlayerModel.Tailwind = 0;
+            BattleAnimSystem.Instance.PlayGaugesValueChangeAnim(0,0.1f);
+            
             // 添加动画队列，参数为新加入的卡牌索引
             BattleAnimSystem.Instance.QueueDrawCardToHandAnim(battleModel.HandCards.Count - 1);
         }
@@ -319,6 +324,11 @@ namespace Game.Logic
             BattleAnimSystem.Instance.QueueResourceBarValChange(battleModel.PlayerModel.Resources - totalCost, 0.2f);
             battleModel.PlayerModel.SetResourcesWithoutNotify(battleModel.PlayerModel.Resources - totalCost);
             Debug.Log($"使用卡牌：扣除费用 => {totalCost.Fire}/{totalCost.Water}/{totalCost.Earth}/{totalCost.Air}");
+            
+            // 乘风
+            battleModel.PlayerModel.Tailwind++;
+            BattleAnimSystem.Instance.PlayGaugesValueChangeAnim(battleModel.PlayerModel.Tailwind,0.1f);
+            Debug.Log($"乘风中，当前为{battleModel.PlayerModel.Tailwind}");
 
             // 结算卡牌效果(场景=Use)
             ProcessCardEffects(battleModel, cardModel, cardData, CardUseContext.Use);
@@ -394,6 +404,11 @@ namespace Game.Logic
 
             // 先标记删除，再处理卡牌效果
             MarkCardForRemoval(handCardIndex);
+            
+            //清除乘风
+            battleModel.PlayerModel.Tailwind = 0;
+            BattleAnimSystem.Instance.PlayGaugesValueChangeAnim(0,0.1f);
+            
             // 结算卡牌效果(场景=Sacrifice)
             ProcessCardEffects(battleModel, cardModel, cardData, CardUseContext.Sacrifice);
             BattleAnimSystem.Instance.QueueSacrificeCardFromHandAnim(handCardIndex);

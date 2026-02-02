@@ -21,6 +21,8 @@ namespace Game.Model.InGameSubModel
         private bool _isFocusCondition = false;
         [AutoNotify]
         private int _focusArgs = 0;
+        [AutoNotify]
+        private int _tailwind = 0;
 
         public DataCollection<BuffModel> Buffs { get; } = new();
         

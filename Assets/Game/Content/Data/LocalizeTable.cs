@@ -603,233 +603,243 @@ namespace Game.Data {
         
         Effect_Damage_Focus_Desc = 294,
         
-        Tip_Enemy_HP = 295,
+        Effect_Damage_Windborne_Desc = 295,
         
-        Tip_Enemy_ATK = 296,
+        Tip_Enemy_HP = 296,
         
-        Tip_Enemy_Reward = 297,
+        Tip_Enemy_ATK = 297,
         
-        Tip_Enemy_HP_Desc = 298,
+        Tip_Enemy_Reward = 298,
         
-        Tip_Enemy_ATK_Desc = 299,
+        Tip_Enemy_HP_Desc = 299,
         
-        Tip_Enemy_Reward_Desc = 300,
+        Tip_Enemy_ATK_Desc = 300,
         
-        Tip_Intro_Buff = 301,
+        Tip_Enemy_Reward_Desc = 301,
         
-        Tip_Intro_Buff_Desc = 302,
+        Tip_Intro_Buff = 302,
         
-        Tip_Intro_Properties = 303,
+        Tip_Intro_Buff_Desc = 303,
         
-        Tip_Intro_Properties_Desc = 304,
+        Tip_Intro_Properties = 304,
         
-        Tip_Player_HP = 305,
+        Tip_Intro_Properties_Desc = 305,
         
-        Tip_Player_HP_Desc = 306,
+        Tip_Player_HP = 306,
         
-        Tip_Player_Elemental_Water = 307,
+        Tip_Player_HP_Desc = 307,
         
-        Tip_Player_Elemental_Fire = 308,
+        Tip_Player_Elemental_Water = 308,
         
-        Tip_Player_Elemental_Earth = 309,
+        Tip_Player_Elemental_Fire = 309,
         
-        Tip_Player_Elemental_Air = 310,
+        Tip_Player_Elemental_Earth = 310,
         
-        Tip_Player_Elemental_Water_Desc = 311,
+        Tip_Player_Elemental_Air = 311,
         
-        Tip_Player_Elemental_Fire_Desc = 312,
+        Tip_Player_Elemental_Water_Desc = 312,
         
-        Tip_Player_Elemental_Earth_Desc = 313,
+        Tip_Player_Elemental_Fire_Desc = 313,
         
-        Tip_Player_Elemental_Air_Desc = 314,
+        Tip_Player_Elemental_Earth_Desc = 314,
         
-        Tip_Player_Essence = 315,
+        Tip_Player_Elemental_Air_Desc = 315,
         
-        Tip_Player_Essence_Desc = 316,
+        Tip_Player_Essence = 316,
         
-        Tip_Card_Surge = 317,
+        Tip_Player_Essence_Desc = 317,
         
-        Tip_Card_Surge_Desc = 318,
+        Tip_Card_Surge = 318,
         
-        Tip_Card_Madness = 319,
+        Tip_Card_Surge_Desc = 319,
         
-        Tip_Card_Madness_Desc = 320,
+        Tip_Card_Madness = 320,
         
-        Tip_Card_Unstable = 321,
+        Tip_Card_Madness_Desc = 321,
         
-        Tip_Card_Unstable_Desc = 322,
+        Tip_Card_Unstable = 322,
         
-        Tip_Card_Cooldown = 323,
+        Tip_Card_Unstable_Desc = 323,
         
-        Tip_Card_Cooldown_Desc = 324,
+        Tip_Card_Cooldown = 324,
         
-        Tip_Card_Neutralize = 325,
+        Tip_Card_Cooldown_Desc = 325,
         
-        Tip_Card_Neutralize_Desc = 326,
+        Tip_Card_Neutralize = 326,
         
-        Tip_Card_Catalyze = 327,
+        Tip_Card_Neutralize_Desc = 327,
         
-        Tip_Card_Catalyze_Desc = 328,
+        Tip_Card_Catalyze = 328,
         
-        Tip_Card_Burn = 329,
+        Tip_Card_Catalyze_Desc = 329,
         
-        Tip_Card_Burn_Desc = 330,
+        Tip_Card_Burn = 330,
         
-        Tip_Card_Stun = 331,
+        Tip_Card_Burn_Desc = 331,
         
-        Tip_Card_Stun_Desc = 332,
+        Tip_Card_Stun = 332,
         
-        Tip_Card_Peace = 333,
+        Tip_Card_Stun_Desc = 333,
         
-        Tip_Card_Peace_Desc = 334,
+        Tip_Card_Peace = 334,
         
-        Tip_Card_Calm = 335,
+        Tip_Card_Peace_Desc = 335,
         
-        Tip_Card_Calm_Desc = 336,
+        Tip_Card_Calm = 336,
         
-        Tip_Card_Swift = 337,
+        Tip_Card_Calm_Desc = 337,
         
-        Tip_Card_Swift_Desc = 338,
+        Tip_Card_Swift = 338,
         
-        Tip_Card_Recycle = 339,
+        Tip_Card_Swift_Desc = 339,
         
-        Tip_Card_Recycle_Desc = 340,
+        Tip_Card_Recycle = 340,
         
-        Tip_Card_Sturdy = 341,
+        Tip_Card_Recycle_Desc = 341,
         
-        Tip_Card_Sturdy_Desc = 342,
+        Tip_Card_Sturdy = 342,
         
-        Tip_Card_Reflect = 343,
+        Tip_Card_Sturdy_Desc = 343,
         
-        Tip_Card_Reflect_Desc = 344,
+        Tip_Card_Reflect = 344,
         
-        Tip_Card_Focus = 345,
+        Tip_Card_Reflect_Desc = 345,
         
-        Tip_Card_Focus_Desc = 346,
+        Tip_Card_Focus = 346,
         
-        Tip_Shop_Refresh = 347,
+        Tip_Card_Focus_Desc = 347,
         
-        Tip_Shop_Refresh_Desc = 348,
+        Tip_Card_Tailwind = 348,
         
-        Tip_Shop_Manage = 349,
+        Tip_Card_Tailwind_Desc = 349,
         
-        Tip_Shop_Manage_Desc = 350,
+        Tip_Card_Windborne = 350,
         
-        Tip_Shop_Buy = 351,
+        Tip_Card_Windborne_Desc = 351,
         
-        Tip_Shop_Buy_Desc = 352,
+        Tip_Shop_Refresh = 352,
         
-        Tip_Shop_Leave = 353,
+        Tip_Shop_Refresh_Desc = 353,
         
-        Tip_Shop_Leave_Desc = 354,
+        Tip_Shop_Manage = 354,
         
-        Tip_Shop_Delete = 355,
+        Tip_Shop_Manage_Desc = 355,
         
-        Tip_Shop_Delete_Desc = 356,
+        Tip_Shop_Buy = 356,
         
-        Tip_ManageCard_Delete = 357,
+        Tip_Shop_Buy_Desc = 357,
         
-        Tip_ManageCard_Delete_Desc = 358,
+        Tip_Shop_Leave = 358,
         
-        Tip_UI_Setting_Cancel = 359,
+        Tip_Shop_Leave_Desc = 359,
         
-        Tip_UI_Setting_Cancel_Desc = 360,
+        Tip_Shop_Delete = 360,
         
-        Tip_UI_Setting_QuickUse = 361,
+        Tip_Shop_Delete_Desc = 361,
         
-        Tip_UI_Setting_QuickUse_Desc = 362,
+        Tip_ManageCard_Delete = 362,
         
-        Tip_Battle_InitialDeck = 363,
+        Tip_ManageCard_Delete_Desc = 363,
         
-        Tip_Battle_InitialDeck_Desc = 364,
+        Tip_UI_Setting_Cancel = 364,
         
-        Tip_Battle_Discard = 365,
+        Tip_UI_Setting_Cancel_Desc = 365,
         
-        Tip_Battle_Discard_Desc = 366,
+        Tip_UI_Setting_QuickUse = 366,
         
-        Tip_Battle_Draw = 367,
+        Tip_UI_Setting_QuickUse_Desc = 367,
         
-        Tip_Battle_Draw_Desc = 368,
+        Tip_Battle_InitialDeck = 368,
         
-        Tip_Lable_Fragile = 369,
+        Tip_Battle_InitialDeck_Desc = 369,
         
-        Tip_Lable_Fragile_Desc = 370,
+        Tip_Battle_Discard = 370,
         
-        Tip_Lable_Toxic = 371,
+        Tip_Battle_Discard_Desc = 371,
         
-        Tip_Lable_Toxic_Desc = 372,
+        Tip_Battle_Draw = 372,
         
-        Tip_Lable_HighTemp = 373,
+        Tip_Battle_Draw_Desc = 373,
         
-        Tip_Lable_HighTemp_Desc = 374,
+        Tip_Lable_Fragile = 374,
         
-        Tip_Lable_MagicLock = 375,
+        Tip_Lable_Fragile_Desc = 375,
         
-        Tip_Lable_MagicLock_Desc = 376,
+        Tip_Lable_Toxic = 376,
         
-        Tip_ChooseLevel_Sample = 377,
+        Tip_Lable_Toxic_Desc = 377,
         
-        Tip_ChooseLevel_Sample_Desc = 378,
+        Tip_Lable_HighTemp = 378,
         
-        Tip_ChooseLevel_Boss = 379,
+        Tip_Lable_HighTemp_Desc = 379,
         
-        Tip_ChooseLevel_Boss_Desc = 380,
+        Tip_Lable_MagicLock = 380,
         
-        Tip_ChooseLevel_Tavern = 381,
+        Tip_Lable_MagicLock_Desc = 381,
         
-        Tip_ChooseLevel_Tavern_Desc = 382,
+        Tip_ChooseLevel_Sample = 382,
         
-        Fail_Tip_1 = 383,
+        Tip_ChooseLevel_Sample_Desc = 383,
         
-        Fail_Tip_2 = 384,
+        Tip_ChooseLevel_Boss = 384,
         
-        Fail_Tip_3 = 385,
+        Tip_ChooseLevel_Boss_Desc = 385,
         
-        Fail_Tip_4 = 386,
+        Tip_ChooseLevel_Tavern = 386,
         
-        Prototype_1 = 387,
+        Tip_ChooseLevel_Tavern_Desc = 387,
         
-        Prototype_2 = 388,
+        Fail_Tip_1 = 388,
         
-        Prototype_3 = 389,
+        Fail_Tip_2 = 389,
         
-        Prototype_4 = 390,
+        Fail_Tip_3 = 390,
         
-        Prototype_5 = 391,
+        Fail_Tip_4 = 391,
         
-        Prototype_6 = 392,
+        Prototype_1 = 392,
         
-        Prototype_7 = 393,
+        Prototype_2 = 393,
         
-        Prototype_8 = 394,
+        Prototype_3 = 394,
         
-        Prototype_9 = 395,
+        Prototype_4 = 395,
         
-        Prototype_10 = 396,
+        Prototype_5 = 396,
         
-        Prototype_11 = 397,
+        Prototype_6 = 397,
         
-        Prototype_12 = 398,
+        Prototype_7 = 398,
         
-        Prototype_13 = 399,
+        Prototype_8 = 399,
         
-        Prototype_14 = 400,
+        Prototype_9 = 400,
         
-        Prototype_15 = 401,
+        Prototype_10 = 401,
         
-        Prototype_16 = 402,
+        Prototype_11 = 402,
         
-        Prototype_17 = 403,
+        Prototype_12 = 403,
         
-        Prototype_18 = 404,
+        Prototype_13 = 404,
         
-        Prototype_19 = 405,
+        Prototype_14 = 405,
         
-        Prototype_20 = 406,
+        Prototype_15 = 406,
         
-        Prototype_21 = 407,
+        Prototype_16 = 407,
         
-        Prototype_22 = 408,
+        Prototype_17 = 408,
+        
+        Prototype_18 = 409,
+        
+        Prototype_19 = 410,
+        
+        Prototype_20 = 411,
+        
+        Prototype_21 = 412,
+        
+        Prototype_22 = 413,
     }
     
     #region 

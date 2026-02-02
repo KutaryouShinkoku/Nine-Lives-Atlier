@@ -34,6 +34,11 @@ namespace Game.UI.InGame
         private TMP_Text textHealth;
 
         [SerializeField]
+        private GameObject tailwindGauge;
+        [SerializeField]
+        private TMP_Text txtTailwind;
+
+        [SerializeField]
         private UIBuffCollectionView buffCollectionView;
 
         [SerializeField]
@@ -70,6 +75,7 @@ namespace Game.UI.InGame
             barWater.SetMaxValue(entry.ResMax[(int)CardBaseType.Water]);
             barEarth.SetMaxValue(entry.ResMax[(int)CardBaseType.Earth]);
             barAir.SetMaxValue(entry.ResMax[(int)CardBaseType.Air]);
+            SetGauges(character);
         }
 
         public void SetPlayerElements(bool[] elements)
@@ -89,12 +95,28 @@ namespace Game.UI.InGame
             barAir.SetValue(res.Air);
         }
 
+        public void SetGauges(CharacterIds character)
+        {
+            var entry = character.Data();
+            //如果选择里包含气，则额外有顺风量表
+            tailwindGauge.SetActive(entry.ResMax[(int)CardBaseType.Air] != 0);
+            //特定组合会有额外量表，如果以后要做的话，就把这个做成数组或者list吧。
+        }
+
+        public void ChangeGaugeValue(int value)
+        {
+            txtTailwind.SetText(value.ToString());
+        }
+
         public void SetHealth(int health)
         {
             textHealth.SetText(health.ToString());
         }
 
         public void PlayResourceBarValChangeAnim(CardCost res) => SetResources(res);
+        
+        //暂时只有一个量表，先史山一下
+        public void PlayGaugesValueChangeAnim(int value) => ChangeGaugeValue(value);
         public async UniTask PlayResourceShakeAnim(CancellationToken token) => await animResourceShake.Play(token);
     }
 }

@@ -34,6 +34,13 @@ namespace Game.BattleAnim
             await UniTask.WaitForSeconds(time, cancellationToken: token);
         }
 
+        public async UniTask PlayGaugesValueChangeAnim(int value,float time)
+        {
+            //如果需要更精细的动画，在此调整
+            _playerView.PlayGaugesValueChangeAnim(value);
+            await UniTask.WaitForSeconds(time);
+        }
+
         #endregion
 
         #region PopupNumber Animations

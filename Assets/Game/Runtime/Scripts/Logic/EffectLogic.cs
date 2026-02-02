@@ -490,6 +490,19 @@ namespace Game.Logic
                     Debug.Log($"[Effect] Draw_Focus: 设置受伤标志位");
                 }
             },
+            
+            //Tailwind
+            {
+                EffectIds.Damage_Windborne,
+                (m, cm, id, arg, index, usageContext) =>
+                {
+                    if (m.PlayerModel.Tailwind != 0)
+                    {
+                        ApplyEnemyDamage(m.EnemyModel, arg * m.PlayerModel.Tailwind);
+                    }
+                    Debug.Log($"乘风{m.PlayerModel.Tailwind}，总伤害为{arg * m.PlayerModel.Tailwind}");
+                }
+            },
 
             //Buff
             {
