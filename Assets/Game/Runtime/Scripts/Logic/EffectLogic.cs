@@ -491,7 +491,7 @@ namespace Game.Logic
                 }
             },
 
-            
+
             //Tailwind
             {
                 EffectIds.Damage_Windborne,
@@ -499,9 +499,9 @@ namespace Game.Logic
                 {
                     if (m.PlayerModel.Tailwind != 0)
                     {
-                        ApplyEnemyDamage(m.EnemyModel, arg * m.PlayerModel.Tailwind);
+                        ApplyEnemyDamage(m.EnemyModel, arg);
                     }
-                    Debug.Log($"乘风{m.PlayerModel.Tailwind}，总伤害为{arg * m.PlayerModel.Tailwind}");
+                    Debug.Log($"乘风{m.PlayerModel.Tailwind}，总伤害为{arg}");
                 }
             },
             {            
