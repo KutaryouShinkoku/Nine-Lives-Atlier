@@ -229,617 +229,635 @@ namespace Game.Data {
         
         StoneskinPotion = 107,
         
-        GreaterEarthPotion = 108,
+        FocusPotion = 108,
         
-        Character_Test = 109,
+        SpikePotion = 109,
         
-        Enemy_Test = 110,
+        EarthPowerPotion = 110,
         
-        Character_Defalt = 111,
+        CrustPotion = 111,
         
-        Character_Defalt_Desc = 112,
+        BreathOfEarth = 112,
         
-        Character_Unknown = 113,
+        GreaterEarthPotion = 113,
         
-        Character_Unknown_Desc = 114,
+        BreathOfTheWild = 114,
         
-        Character_Pyromancer = 115,
+        RoarOfTheEarth = 115,
         
-        Character_Pyromancer_Desc = 116,
+        Character_Test = 116,
         
-        Character_Watermancer = 117,
+        Enemy_Test = 117,
         
-        Character_Watermancer_Desc = 118,
+        Character_Defalt = 118,
         
-        Character_Scientist = 119,
+        Character_Defalt_Desc = 119,
         
-        Character_Scientist_Desc = 120,
+        Character_Unknown = 120,
         
-        Character_EarthMage = 121,
+        Character_Unknown_Desc = 121,
         
-        Character_EarthMage_Desc = 122,
+        Character_Pyromancer = 122,
         
-        Buff_Burning = 123,
+        Character_Pyromancer_Desc = 123,
         
-        Buff_Burning_Desc = 124,
+        Character_Watermancer = 124,
         
-        Buff_Quickness = 125,
+        Character_Watermancer_Desc = 125,
         
-        Buff_Quickness_Desc = 126,
+        Character_Scientist = 126,
         
-        Buff_Stun = 127,
+        Character_Scientist_Desc = 127,
         
-        Buff_Stun_Desc = 128,
+        Character_EarthMage = 128,
         
-        Buff_Calm = 129,
+        Character_EarthMage_Desc = 129,
         
-        Buff_Calm_Desc = 130,
+        Buff_Burning = 130,
         
-        Buff_Sturdy = 131,
+        Buff_Burning_Desc = 131,
         
-        Buff_Sturdy_Desc = 132,
+        Buff_Quickness = 132,
         
-        Buff_Reflect = 133,
+        Buff_Quickness_Desc = 133,
         
-        Buff_Reflect_Desc = 134,
+        Buff_Stun = 134,
         
-        Buff_Rusted = 135,
+        Buff_Stun_Desc = 135,
         
-        Buff_Rusted_Desc = 136,
+        Buff_Calm = 136,
         
-        Buff_HighReactivity = 137,
+        Buff_Calm_Desc = 137,
         
-        Buff_HighReactivity_Desc = 138,
+        Buff_Sturdy = 138,
         
-        Level_Unknown = 139,
+        Buff_Sturdy_Desc = 139,
         
-        TutorialLevel_Name = 140,
+        Buff_Reflect = 140,
         
-        Level1_Name = 141,
+        Buff_Reflect_Desc = 141,
         
-        Level1_Desc = 142,
+        Buff_Rusted = 142,
         
-        Level2_Name = 143,
+        Buff_Rusted_Desc = 143,
         
-        Level2_Desc = 144,
+        Buff_HighReactivity = 144,
         
-        Level3_Name = 145,
+        Buff_HighReactivity_Desc = 145,
         
-        Level3_Desc = 146,
+        Level_Unknown = 146,
         
-        Level4_Name = 147,
+        TutorialLevel_Name = 147,
         
-        Level4_Desc = 148,
+        Level1_Name = 148,
         
-        Level5_Name = 149,
+        Level1_Desc = 149,
         
-        Level5_Desc = 150,
+        Level2_Name = 150,
         
-        Level_Infinite_Name = 151,
+        Level2_Desc = 151,
         
-        Level_Infinite_Desc = 152,
+        Level3_Name = 152,
         
-        Boss_RustedVessel_Desc = 153,
+        Level3_Desc = 153,
         
-        Boss_HighReactivity_Desc = 154,
+        Level4_Name = 154,
         
-        Boss_Uncomplete_Desc = 155,
+        Level4_Desc = 155,
         
-        Boss_Infinite_Desc = 156,
+        Level5_Name = 156,
         
-        Level_Step1_Desc = 157,
+        Level5_Desc = 157,
         
-        Level_Step2_Desc = 158,
+        Level_Infinite_Name = 158,
         
-        Tutorial_Message_Test = 159,
+        Level_Infinite_Desc = 159,
         
-        Tutorial_Message_1 = 160,
+        Boss_RustedVessel_Desc = 160,
         
-        Tutorial_Message_2 = 161,
+        Boss_HighReactivity_Desc = 161,
         
-        Tutorial_Message_3 = 162,
+        Boss_Uncomplete_Desc = 162,
         
-        Tutorial_Message_4 = 163,
+        Boss_Infinite_Desc = 163,
         
-        Tutorial_Message_5 = 164,
+        Level_Step1_Desc = 164,
         
-        Tutorial_Message_6 = 165,
+        Level_Step2_Desc = 165,
         
-        Tutorial_Message_7 = 166,
+        Tutorial_Message_Test = 166,
         
-        Tutorial_Message_8 = 167,
+        Tutorial_Message_1 = 167,
         
-        Tutorial_Message_9 = 168,
+        Tutorial_Message_2 = 168,
         
-        Tutorial_Message_10 = 169,
+        Tutorial_Message_3 = 169,
         
-        Tutorial_Message_11 = 170,
+        Tutorial_Message_4 = 170,
         
-        Tutorial_Message_11_1 = 171,
+        Tutorial_Message_5 = 171,
         
-        Tutorial_Message_11_2 = 172,
+        Tutorial_Message_6 = 172,
         
-        Tutorial_Message_11_3 = 173,
+        Tutorial_Message_7 = 173,
         
-        Tutorial_Message_12 = 174,
+        Tutorial_Message_8 = 174,
         
-        Tutorial_Message_13 = 175,
+        Tutorial_Message_9 = 175,
         
-        Tutorial_Message_14 = 176,
+        Tutorial_Message_10 = 176,
         
-        Tutorial_Message_15 = 177,
+        Tutorial_Message_11 = 177,
         
-        Tutorial_Message_15_1 = 178,
+        Tutorial_Message_11_1 = 178,
         
-        Tutorial_Message_15_2 = 179,
+        Tutorial_Message_11_2 = 179,
         
-        Tutorial_Message_CardDetail_1 = 180,
+        Tutorial_Message_11_3 = 180,
         
-        Tutorial_Message_CardDetail_2 = 181,
+        Tutorial_Message_12 = 181,
         
-        Tutorial_Message_16 = 182,
+        Tutorial_Message_13 = 182,
         
-        Tutorial_Message_17 = 183,
+        Tutorial_Message_14 = 183,
         
-        Tutorial_Message_18 = 184,
+        Tutorial_Message_15 = 184,
         
-        Tutorial_Message_19 = 185,
+        Tutorial_Message_15_1 = 185,
         
-        Tutorial_Message_20 = 186,
+        Tutorial_Message_15_2 = 186,
         
-        Tutorial_Message_21 = 187,
+        Tutorial_Message_CardDetail_1 = 187,
         
-        Tutorial_Message_22 = 188,
+        Tutorial_Message_CardDetail_2 = 188,
         
-        Tutorial_Message_23 = 189,
+        Tutorial_Message_16 = 189,
         
-        Tutorial_23_Draw = 190,
+        Tutorial_Message_17 = 190,
         
-        Tutorial_Message_23_1 = 191,
+        Tutorial_Message_18 = 191,
         
-        Tutorial_Message_23_2 = 192,
+        Tutorial_Message_19 = 192,
         
-        Tutorial_Message_23_3 = 193,
+        Tutorial_Message_20 = 193,
         
-        Tutorial_Message_23_4 = 194,
+        Tutorial_Message_21 = 194,
         
-        Tutorial_Message_24 = 195,
+        Tutorial_Message_22 = 195,
         
-        Tutorial_Message_25 = 196,
+        Tutorial_Message_23 = 196,
         
-        Tutorial_Message_26 = 197,
+        Tutorial_23_Draw = 197,
         
-        Tutorial_Message_27 = 198,
+        Tutorial_Message_23_1 = 198,
         
-        Tutorial_Message_28 = 199,
+        Tutorial_Message_23_2 = 199,
         
-        Tutorial_Message_Branch1 = 200,
+        Tutorial_Message_23_3 = 200,
         
-        Tutorial_Message_Branch2 = 201,
+        Tutorial_Message_23_4 = 201,
         
-        Tutorial_Message_EnterCharaSelection = 202,
+        Tutorial_Message_24 = 202,
         
-        Tutorial_Message_EnterCharaSelection_2 = 203,
+        Tutorial_Message_25 = 203,
         
-        Tutorial_Message_EnterCharaSelection_3 = 204,
+        Tutorial_Message_26 = 204,
         
-        Tutorial_Message_EnterMap = 205,
+        Tutorial_Message_27 = 205,
         
-        Tutorial_Message_EnterMap_2 = 206,
+        Tutorial_Message_28 = 206,
         
-        Tutorial_Message_EnterMap_3 = 207,
+        Tutorial_Message_Branch1 = 207,
         
-        Tutorial_Message_EnterMap_4 = 208,
+        Tutorial_Message_Branch2 = 208,
         
-        Tutorial_Message_EnterMap_5 = 209,
+        Tutorial_Message_EnterCharaSelection = 209,
         
-        Tutorial_Message_EnterMap_6 = 210,
+        Tutorial_Message_EnterCharaSelection_2 = 210,
         
-        Tutorial_Message_EnterMap_7 = 211,
+        Tutorial_Message_EnterCharaSelection_3 = 211,
         
-        Tutorial_Message_EnterMap_8 = 212,
+        Tutorial_Message_EnterMap = 212,
         
-        Tutorial_Message_Reward_1 = 213,
+        Tutorial_Message_EnterMap_2 = 213,
         
-        Tutorial_Message_Reward_2 = 214,
+        Tutorial_Message_EnterMap_3 = 214,
         
-        Tutorial_Message_Reward_3 = 215,
+        Tutorial_Message_EnterMap_4 = 215,
         
-        Tutorial_Message_Reward_4 = 216,
+        Tutorial_Message_EnterMap_5 = 216,
         
-        Tutorial_Message_Reward_5 = 217,
+        Tutorial_Message_EnterMap_6 = 217,
         
-        Tutorial_Message_Reward_6 = 218,
+        Tutorial_Message_EnterMap_7 = 218,
         
-        Tutorial_Message_HealthBelow25 = 219,
+        Tutorial_Message_EnterMap_8 = 219,
         
-        Tutorial_Message_Shop_1 = 220,
+        Tutorial_Message_Reward_1 = 220,
         
-        Tutorial_Message_Shop_2 = 221,
+        Tutorial_Message_Reward_2 = 221,
         
-        Tutorial_Message_Shop_3 = 222,
+        Tutorial_Message_Reward_3 = 222,
         
-        Tutorial_Message_Shop_4 = 223,
+        Tutorial_Message_Reward_4 = 223,
         
-        Tutorial_Message_Shop_5 = 224,
+        Tutorial_Message_Reward_5 = 224,
         
-        Tutorial_Message_Shop_6 = 225,
+        Tutorial_Message_Reward_6 = 225,
         
-        Tutorial_Message_ShopUpdate_1 = 226,
+        Tutorial_Message_HealthBelow25 = 226,
         
-        Tutorial_Message_ShopUpdate_2 = 227,
+        Tutorial_Message_Shop_1 = 227,
         
-        Tutorial_Message_ShopUpdate_3 = 228,
+        Tutorial_Message_Shop_2 = 228,
         
-        Tutorial_Message_ShopUpdate_4 = 229,
+        Tutorial_Message_Shop_3 = 229,
         
-        Tutorial_Message_ShopUpdate_5 = 230,
+        Tutorial_Message_Shop_4 = 230,
         
-        Tutorial_Message_ShopUpdate_6 = 231,
+        Tutorial_Message_Shop_5 = 231,
         
-        Tutorial_Message_ShopUpdate_7 = 232,
+        Tutorial_Message_Shop_6 = 232,
         
-        Tutorial_Message_ShopUpdate_8 = 233,
+        Tutorial_Message_ShopUpdate_1 = 233,
         
-        Tutorial_Message_ShopUpdate_9 = 234,
+        Tutorial_Message_ShopUpdate_2 = 234,
         
-        Tutorial_Message_ShopUpdate_10 = 235,
+        Tutorial_Message_ShopUpdate_3 = 235,
         
-        Tutorial_Message_ShopUpdate_11 = 236,
+        Tutorial_Message_ShopUpdate_4 = 236,
         
-        Tutorial_Message_ShopUpdate_12 = 237,
+        Tutorial_Message_ShopUpdate_5 = 237,
         
-        Tutorial_Message_ShopUpdate_13 = 238,
+        Tutorial_Message_ShopUpdate_6 = 238,
         
-        Tutorial_Message_Boss_1 = 239,
+        Tutorial_Message_ShopUpdate_7 = 239,
         
-        Tutorial_Message_Boss_2 = 240,
+        Tutorial_Message_ShopUpdate_8 = 240,
         
-        Tutorial_Message_Boss_3 = 241,
+        Tutorial_Message_ShopUpdate_9 = 241,
         
-        Tutorial_Message_Boss_4 = 242,
+        Tutorial_Message_ShopUpdate_10 = 242,
         
-        Tutorial_Message_Boss_5 = 243,
+        Tutorial_Message_ShopUpdate_11 = 243,
         
-        Tutorial_BranchTest_1 = 244,
+        Tutorial_Message_ShopUpdate_12 = 244,
         
-        Avg_HelloWorld = 245,
+        Tutorial_Message_ShopUpdate_13 = 245,
         
-        Effect_Damage_Desc = 246,
+        Tutorial_Message_Boss_1 = 246,
         
-        Effect_Damage_Self_Desc = 247,
+        Tutorial_Message_Boss_2 = 247,
         
-        Effect_Heal_Desc = 248,
+        Tutorial_Message_Boss_3 = 248,
         
-        Effect_Draw_Desc = 249,
+        Tutorial_Message_Boss_4 = 249,
         
-        Effect_Recycle_Desc = 250,
+        Tutorial_Message_Boss_5 = 250,
         
-        Effect_Discard_Desc = 251,
+        Tutorial_BranchTest_1 = 251,
         
-        Effect_Neutralize_Desc = 252,
+        Avg_HelloWorld = 252,
         
-        Effect_Catalyze_Desc = 253,
+        Effect_Damage_Desc = 253,
         
-        Effect_Elemental_Fire_Desc = 254,
+        Effect_Damage_Self_Desc = 254,
         
-        Effect_Elemental_Water_Desc = 255,
+        Effect_Heal_Desc = 255,
         
-        Effect_Elemental_Earth_Desc = 256,
+        Effect_Draw_Desc = 256,
         
-        Effect_Elemental_Air_Desc = 257,
+        Effect_Recycle_Desc = 257,
         
-        Effect_Buff_Burn_Enemy_Desc = 258,
+        Effect_Discard_Desc = 258,
         
-        Effect_Buff_Burn_Self_Desc = 259,
+        Effect_Neutralize_Desc = 259,
         
-        Effect_Idle_Desc = 260,
+        Effect_Catalyze_Desc = 260,
         
-        Effect_Scaling_Desc = 261,
+        Effect_Elemental_Fire_Desc = 261,
         
-        Effect_LED_Water_Desc = 262,
+        Effect_Elemental_Water_Desc = 262,
         
-        Effect_Ignite_Desc = 263,
+        Effect_Elemental_Earth_Desc = 263,
         
-        Effect_Buff_Calm_Desc = 264,
+        Effect_Elemental_Air_Desc = 264,
         
-        Effect_Buff_Quickness_Desc = 265,
+        Effect_Buff_Burn_Enemy_Desc = 265,
         
-        Effect_Buff_Stun_Enemy_Desc = 266,
+        Effect_Buff_Burn_Self_Desc = 266,
         
-        Buff_Sturdy_Self_Desc = 267,
+        Effect_Idle_Desc = 267,
         
-        Buff_Reflect_Self_Desc = 268,
+        Effect_Scaling_Desc = 268,
         
-        Buff_Reflect_Enemy_Desc = 269,
+        Effect_LED_Water_Desc = 269,
         
-        Effect_Damage_Surge_Desc = 270,
+        Effect_Ignite_Desc = 270,
         
-        Effect_Damage_Self_Surge_Desc = 271,
+        Effect_Buff_Calm_Desc = 271,
         
-        Effect_Heal_Surge_Desc = 272,
+        Effect_Buff_Quickness_Desc = 272,
         
-        Effect_Draw_Surge_Desc = 273,
+        Effect_Buff_Stun_Enemy_Desc = 273,
         
-        Effect_Damage_Madness_Desc = 274,
+        Buff_Sturdy_Self_Desc = 274,
         
-        Effect_Damage_Self_Madness_Desc = 275,
+        Buff_Reflect_Self_Desc = 275,
         
-        Effect_Heal_Madness_Desc = 276,
+        Buff_Reflect_Enemy_Desc = 276,
         
-        Effect_Draw_Madness_Desc = 277,
+        Effect_Damage_Surge_Desc = 277,
         
-        Effect_Discard_Madness_Desc = 278,
+        Effect_Damage_Self_Surge_Desc = 278,
         
-        Effect_Elemental_Water_Madness_Desc = 279,
+        Effect_Heal_Surge_Desc = 279,
         
-        Effect_Buff_Stun_Enemy_Madness_Desc = 280,
+        Effect_Draw_Surge_Desc = 280,
         
-        Effect_Damage_Unstable_Desc = 281,
+        Effect_Damage_Madness_Desc = 281,
         
-        Effect_Damage_Self_Unstable_Desc = 282,
+        Effect_Damage_Self_Madness_Desc = 282,
         
-        Effect_Heal_Unstable_Desc = 283,
+        Effect_Heal_Madness_Desc = 283,
         
-        Effect_Draw_Unstable_Desc = 284,
+        Effect_Draw_Madness_Desc = 284,
         
-        Effect_Damage_Cooldown_Desc = 285,
+        Effect_Discard_Madness_Desc = 285,
         
-        Effect_Draw_Cooldown_Desc = 286,
+        Effect_Elemental_Water_Madness_Desc = 286,
         
-        Effect_Ignite_Cooldown_Desc = 287,
+        Effect_Buff_Stun_Enemy_Madness_Desc = 287,
         
-        Effect_Calm_Cooldown_Desc = 288,
+        Effect_Damage_Unstable_Desc = 288,
         
-        Effect_Damage_Peace_Desc = 289,
+        Effect_Damage_Self_Unstable_Desc = 289,
         
-        Effect_Draw_Peace_Desc = 290,
+        Effect_Heal_Unstable_Desc = 290,
         
-        Effect_Quickness_Peace_Desc = 291,
+        Effect_Draw_Unstable_Desc = 291,
         
-        Effect_Calm_Peace_Desc = 292,
+        Effect_Damage_Cooldown_Desc = 292,
         
-        Effect_Draw_Focus_Desc = 293,
+        Effect_Draw_Cooldown_Desc = 293,
         
-        Effect_Damage_Focus_Desc = 294,
+        Effect_Ignite_Cooldown_Desc = 294,
         
-        Effect_Damage_Windborne_Desc = 295,
+        Effect_Calm_Cooldown_Desc = 295,
         
-        Tip_Enemy_HP = 296,
+        Effect_Damage_Peace_Desc = 296,
         
-        Tip_Enemy_ATK = 297,
+        Effect_Draw_Peace_Desc = 297,
         
-        Tip_Enemy_Reward = 298,
+        Effect_Quickness_Peace_Desc = 298,
         
-        Tip_Enemy_HP_Desc = 299,
+        Effect_Calm_Peace_Desc = 299,
         
-        Tip_Enemy_ATK_Desc = 300,
+        Effect_Draw_Focus_Desc = 300,
         
-        Tip_Enemy_Reward_Desc = 301,
+        Effect_Damage_Focus_Desc = 301,
         
-        Tip_Intro_Buff = 302,
+        Buff_Sturdy_Self_Focus_Desc = 302,
         
-        Tip_Intro_Buff_Desc = 303,
+        Buff_Reflect_Self_Focus_Desc = 303,
         
-        Tip_Intro_Properties = 304,
+        Effect_Damage_Windborne_Desc = 304,
         
-        Tip_Intro_Properties_Desc = 305,
+        Tip_Enemy_HP = 305,
         
-        Tip_Player_HP = 306,
+        Tip_Enemy_ATK = 306,
         
-        Tip_Player_HP_Desc = 307,
+        Tip_Enemy_Reward = 307,
         
-        Tip_Player_Elemental_Water = 308,
+        Tip_Enemy_HP_Desc = 308,
         
-        Tip_Player_Elemental_Fire = 309,
+        Tip_Enemy_ATK_Desc = 309,
         
-        Tip_Player_Elemental_Earth = 310,
+        Tip_Enemy_Reward_Desc = 310,
         
-        Tip_Player_Elemental_Air = 311,
+        Tip_Intro_Buff = 311,
         
-        Tip_Player_Elemental_Water_Desc = 312,
+        Tip_Intro_Buff_Desc = 312,
         
-        Tip_Player_Elemental_Fire_Desc = 313,
+        Tip_Intro_Properties = 313,
         
-        Tip_Player_Elemental_Earth_Desc = 314,
+        Tip_Intro_Properties_Desc = 314,
         
-        Tip_Player_Elemental_Air_Desc = 315,
+        Tip_Player_HP = 315,
         
-        Tip_Player_Essence = 316,
+        Tip_Player_HP_Desc = 316,
         
-        Tip_Player_Essence_Desc = 317,
+        Tip_Player_Elemental_Water = 317,
         
-        Tip_Card_Surge = 318,
+        Tip_Player_Elemental_Fire = 318,
         
-        Tip_Card_Surge_Desc = 319,
+        Tip_Player_Elemental_Earth = 319,
         
-        Tip_Card_Madness = 320,
+        Tip_Player_Elemental_Air = 320,
         
-        Tip_Card_Madness_Desc = 321,
+        Tip_Player_Elemental_Water_Desc = 321,
         
-        Tip_Card_Unstable = 322,
+        Tip_Player_Elemental_Fire_Desc = 322,
         
-        Tip_Card_Unstable_Desc = 323,
+        Tip_Player_Elemental_Earth_Desc = 323,
         
-        Tip_Card_Cooldown = 324,
+        Tip_Player_Elemental_Air_Desc = 324,
         
-        Tip_Card_Cooldown_Desc = 325,
+        Tip_Player_Essence = 325,
         
-        Tip_Card_Neutralize = 326,
+        Tip_Player_Essence_Desc = 326,
         
-        Tip_Card_Neutralize_Desc = 327,
+        Tip_Card_Surge = 327,
         
-        Tip_Card_Catalyze = 328,
+        Tip_Card_Surge_Desc = 328,
         
-        Tip_Card_Catalyze_Desc = 329,
+        Tip_Card_Madness = 329,
         
-        Tip_Card_Burn = 330,
+        Tip_Card_Madness_Desc = 330,
         
-        Tip_Card_Burn_Desc = 331,
+        Tip_Card_Unstable = 331,
         
-        Tip_Card_Stun = 332,
+        Tip_Card_Unstable_Desc = 332,
         
-        Tip_Card_Stun_Desc = 333,
+        Tip_Card_Cooldown = 333,
         
-        Tip_Card_Peace = 334,
+        Tip_Card_Cooldown_Desc = 334,
         
-        Tip_Card_Peace_Desc = 335,
+        Tip_Card_Neutralize = 335,
         
-        Tip_Card_Calm = 336,
+        Tip_Card_Neutralize_Desc = 336,
         
-        Tip_Card_Calm_Desc = 337,
+        Tip_Card_Catalyze = 337,
         
-        Tip_Card_Swift = 338,
+        Tip_Card_Catalyze_Desc = 338,
         
-        Tip_Card_Swift_Desc = 339,
+        Tip_Card_Burn = 339,
         
-        Tip_Card_Recycle = 340,
+        Tip_Card_Burn_Desc = 340,
         
-        Tip_Card_Recycle_Desc = 341,
+        Tip_Card_Stun = 341,
         
-        Tip_Card_Sturdy = 342,
+        Tip_Card_Stun_Desc = 342,
         
-        Tip_Card_Sturdy_Desc = 343,
+        Tip_Card_Peace = 343,
         
-        Tip_Card_Reflect = 344,
+        Tip_Card_Peace_Desc = 344,
         
-        Tip_Card_Reflect_Desc = 345,
+        Tip_Card_Calm = 345,
         
-        Tip_Card_Focus = 346,
+        Tip_Card_Calm_Desc = 346,
         
-        Tip_Card_Focus_Desc = 347,
+        Tip_Card_Swift = 347,
         
-        Tip_Card_Tailwind = 348,
+        Tip_Card_Swift_Desc = 348,
         
-        Tip_Card_Tailwind_Desc = 349,
+        Tip_Card_Recycle = 349,
         
-        Tip_Card_Windborne = 350,
+        Tip_Card_Recycle_Desc = 350,
         
-        Tip_Card_Windborne_Desc = 351,
+        Tip_Card_Sturdy = 351,
         
-        Tip_Shop_Refresh = 352,
+        Tip_Card_Sturdy_Desc = 352,
         
-        Tip_Shop_Refresh_Desc = 353,
+        Tip_Card_Reflect = 353,
         
-        Tip_Shop_Manage = 354,
+        Tip_Card_Reflect_Desc = 354,
         
-        Tip_Shop_Manage_Desc = 355,
+        Tip_Card_Focus = 355,
         
-        Tip_Shop_Buy = 356,
+        Tip_Card_Focus_Desc = 356,
         
-        Tip_Shop_Buy_Desc = 357,
+        Tip_Card_Tailwind = 357,
         
-        Tip_Shop_Leave = 358,
+        Tip_Card_Tailwind_Desc = 358,
         
-        Tip_Shop_Leave_Desc = 359,
+        Tip_Card_Windborne = 359,
         
-        Tip_Shop_Delete = 360,
+        Tip_Card_Windborne_Desc = 360,
         
-        Tip_Shop_Delete_Desc = 361,
+        Tip_Shop_Refresh = 361,
         
-        Tip_ManageCard_Delete = 362,
+        Tip_Shop_Refresh_Desc = 362,
         
-        Tip_ManageCard_Delete_Desc = 363,
+        Tip_Shop_Manage = 363,
         
-        Tip_UI_Setting_Cancel = 364,
+        Tip_Shop_Manage_Desc = 364,
         
-        Tip_UI_Setting_Cancel_Desc = 365,
+        Tip_Shop_Buy = 365,
         
-        Tip_UI_Setting_QuickUse = 366,
+        Tip_Shop_Buy_Desc = 366,
         
-        Tip_UI_Setting_QuickUse_Desc = 367,
+        Tip_Shop_Leave = 367,
         
-        Tip_Battle_InitialDeck = 368,
+        Tip_Shop_Leave_Desc = 368,
         
-        Tip_Battle_InitialDeck_Desc = 369,
+        Tip_Shop_Delete = 369,
         
-        Tip_Battle_Discard = 370,
+        Tip_Shop_Delete_Desc = 370,
         
-        Tip_Battle_Discard_Desc = 371,
+        Tip_ManageCard_Delete = 371,
         
-        Tip_Battle_Draw = 372,
+        Tip_ManageCard_Delete_Desc = 372,
         
-        Tip_Battle_Draw_Desc = 373,
+        Tip_UI_Setting_Cancel = 373,
         
-        Tip_Lable_Fragile = 374,
+        Tip_UI_Setting_Cancel_Desc = 374,
         
-        Tip_Lable_Fragile_Desc = 375,
+        Tip_UI_Setting_QuickUse = 375,
         
-        Tip_Lable_Toxic = 376,
+        Tip_UI_Setting_QuickUse_Desc = 376,
         
-        Tip_Lable_Toxic_Desc = 377,
+        Tip_Battle_InitialDeck = 377,
         
-        Tip_Lable_HighTemp = 378,
+        Tip_Battle_InitialDeck_Desc = 378,
         
-        Tip_Lable_HighTemp_Desc = 379,
+        Tip_Battle_Discard = 379,
         
-        Tip_Lable_MagicLock = 380,
+        Tip_Battle_Discard_Desc = 380,
         
-        Tip_Lable_MagicLock_Desc = 381,
+        Tip_Battle_Draw = 381,
         
-        Tip_ChooseLevel_Sample = 382,
+        Tip_Battle_Draw_Desc = 382,
         
-        Tip_ChooseLevel_Sample_Desc = 383,
+        Tip_Lable_Fragile = 383,
         
-        Tip_ChooseLevel_Boss = 384,
+        Tip_Lable_Fragile_Desc = 384,
         
-        Tip_ChooseLevel_Boss_Desc = 385,
+        Tip_Lable_Toxic = 385,
         
-        Tip_ChooseLevel_Tavern = 386,
+        Tip_Lable_Toxic_Desc = 386,
         
-        Tip_ChooseLevel_Tavern_Desc = 387,
+        Tip_Lable_HighTemp = 387,
         
-        Fail_Tip_1 = 388,
+        Tip_Lable_HighTemp_Desc = 388,
         
-        Fail_Tip_2 = 389,
+        Tip_Lable_MagicLock = 389,
         
-        Fail_Tip_3 = 390,
+        Tip_Lable_MagicLock_Desc = 390,
         
-        Fail_Tip_4 = 391,
+        Tip_ChooseLevel_Sample = 391,
         
-        Prototype_1 = 392,
+        Tip_ChooseLevel_Sample_Desc = 392,
         
-        Prototype_2 = 393,
+        Tip_ChooseLevel_Boss = 393,
         
-        Prototype_3 = 394,
+        Tip_ChooseLevel_Boss_Desc = 394,
         
-        Prototype_4 = 395,
+        Tip_ChooseLevel_Tavern = 395,
         
-        Prototype_5 = 396,
+        Tip_ChooseLevel_Tavern_Desc = 396,
         
-        Prototype_6 = 397,
+        Fail_Tip_1 = 397,
         
-        Prototype_7 = 398,
+        Fail_Tip_2 = 398,
         
-        Prototype_8 = 399,
+        Fail_Tip_3 = 399,
         
-        Prototype_9 = 400,
+        Fail_Tip_4 = 400,
         
-        Prototype_10 = 401,
+        Prototype_1 = 401,
         
-        Prototype_11 = 402,
+        Prototype_2 = 402,
         
-        Prototype_12 = 403,
+        Prototype_3 = 403,
         
-        Prototype_13 = 404,
+        Prototype_4 = 404,
         
-        Prototype_14 = 405,
+        Prototype_5 = 405,
         
-        Prototype_15 = 406,
+        Prototype_6 = 406,
         
-        Prototype_16 = 407,
+        Prototype_7 = 407,
         
-        Prototype_17 = 408,
+        Prototype_8 = 408,
         
-        Prototype_18 = 409,
+        Prototype_9 = 409,
         
-        Prototype_19 = 410,
+        Prototype_10 = 410,
         
-        Prototype_20 = 411,
+        Prototype_11 = 411,
         
-        Prototype_21 = 412,
+        Prototype_12 = 412,
         
-        Prototype_22 = 413,
+        Prototype_13 = 413,
+        
+        Prototype_14 = 414,
+        
+        Prototype_15 = 415,
+        
+        Prototype_16 = 416,
+        
+        Prototype_17 = 417,
+        
+        Prototype_18 = 418,
+        
+        Prototype_19 = 419,
+        
+        Prototype_20 = 420,
+        
+        Prototype_21 = 421,
+        
+        Prototype_22 = 422,
     }
     
     #region 

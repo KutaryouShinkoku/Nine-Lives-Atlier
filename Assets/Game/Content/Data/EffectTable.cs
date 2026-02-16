@@ -113,7 +113,11 @@ namespace Game.Data {
         
         Damage_Focus = 49,
         
-        Damage_Windborne = 50,
+        Buff_Sturdy_Self_Focus = 50,
+        
+        Buff_Reflect_Self_Focus = 51,
+        
+        Damage_Windborne = 52,
     }
     
     #region 

@@ -490,6 +490,7 @@ namespace Game.Logic
                     Debug.Log($"[Effect] Draw_Focus: 设置受伤标志位");
                 }
             },
+
             
             //Tailwind
             {
@@ -501,6 +502,28 @@ namespace Game.Logic
                         ApplyEnemyDamage(m.EnemyModel, arg * m.PlayerModel.Tailwind);
                     }
                     Debug.Log($"乘风{m.PlayerModel.Tailwind}，总伤害为{arg * m.PlayerModel.Tailwind}");
+                }
+            },
+            {            
+                EffectIds.Buff_Sturdy_Self_Focus,
+                (m, cm, id, arg, index, usageContext) =>
+                {
+                    m.PlayerModel.IsFocusCondition = true;
+                    m.PlayerModel.FocusArgs = arg;
+                    BuffLogic.ApplyBuff(m.PlayerModel, BuffIds.Sturdy, arg);
+                    Debug.Log($"[Effect] Buff_Sturdy_Self: 玩家增加 {arg} 层坚固");
+                    Debug.Log($"[Effect] Draw_Focus: 设置受伤标志位");
+                }
+            },
+            {            
+                EffectIds.Buff_Reflect_Self_Focus,
+                (m, cm, id, arg, index, usageContext) =>
+                {
+                    m.PlayerModel.IsFocusCondition = true;
+                    m.PlayerModel.FocusArgs = arg;
+                    BuffLogic.ApplyBuff(m.PlayerModel, BuffIds.Reflect, arg);
+                    Debug.Log($"[Effect] Buff_Reflect_Self: 玩家增加 {arg} 层反射");
+                    Debug.Log($"[Effect] Draw_Focus: 设置受伤标志位");
                 }
             },
 
