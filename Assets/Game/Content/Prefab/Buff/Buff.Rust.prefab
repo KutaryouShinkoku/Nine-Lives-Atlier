@@ -42,11 +42,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8789952749726675083, guid: 6d15fe65862fa1746aa6d98300c6fbfb, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 60
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 8789952749726675083, guid: 6d15fe65862fa1746aa6d98300c6fbfb, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 60
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 8789952749726675083, guid: 6d15fe65862fa1746aa6d98300c6fbfb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -103,6 +103,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6420094053225320810, guid: 6d15fe65862fa1746aa6d98300c6fbfb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5559489278924747784}
+    - targetCorrespondingSourceObject: {fileID: 6420094053225320810, guid: 6d15fe65862fa1746aa6d98300c6fbfb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8180000456649080040}
   m_SourcePrefab: {fileID: 100100000, guid: 6d15fe65862fa1746aa6d98300c6fbfb, type: 3}
 --- !u!1 &6108086418649637929 stripped
 GameObject:
@@ -228,3 +231,25 @@ MonoBehaviour:
   m_DetailTexSpeed: {x: 0, y: 0}
   m_CustomRoot: {fileID: 0}
   m_Flip: 0
+--- !u!95 &8180000456649080040
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6108086418649637929}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 011c06839e76b90428f59d8ef94e1dd0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
