@@ -490,6 +490,28 @@ namespace Game.Logic
                     Debug.Log($"[Effect] Draw_Focus: 设置受伤标志位");
                 }
             },
+            {
+                EffectIds.Buff_Sturdy_Self_Focus,
+                (m, cm, id, arg, index, usageContext) =>
+                {
+                    m.PlayerModel.IsFocusCondition = true;
+                    m.PlayerModel.FocusArgs = arg;
+                    BuffLogic.ApplyBuff(m.PlayerModel, BuffIds.Sturdy, arg);
+                    Debug.Log($"[Effect] Buff_Sturdy_Self: 玩家增加 {arg} 层坚固");
+                    Debug.Log($"[Effect] Draw_Focus: 设置受伤标志位");
+                }
+            },
+            {
+                EffectIds.Buff_Reflect_Self_Focus,
+                (m, cm, id, arg, index, usageContext) =>
+                {
+                    m.PlayerModel.IsFocusCondition = true;
+                    m.PlayerModel.FocusArgs = arg;
+                    BuffLogic.ApplyBuff(m.PlayerModel, BuffIds.Reflect, arg);
+                    Debug.Log($"[Effect] Buff_Reflect_Self: 玩家增加 {arg} 层反射");
+                    Debug.Log($"[Effect] Draw_Focus: 设置受伤标志位");
+                }
+            },
 
 
             //Tailwind
@@ -504,26 +526,98 @@ namespace Game.Logic
                     Debug.Log($"乘风{m.PlayerModel.Tailwind}，总伤害为{arg}");
                 }
             },
-            {            
-                EffectIds.Buff_Sturdy_Self_Focus,
+            {
+                EffectIds.Draw_Windborne,
                 (m, cm, id, arg, index, usageContext) =>
                 {
-                    m.PlayerModel.IsFocusCondition = true;
-                    m.PlayerModel.FocusArgs = arg;
-                    BuffLogic.ApplyBuff(m.PlayerModel, BuffIds.Sturdy, arg);
-                    Debug.Log($"[Effect] Buff_Sturdy_Self: 玩家增加 {arg} 层坚固");
-                    Debug.Log($"[Effect] Draw_Focus: 设置受伤标志位");
+                    if (m.PlayerModel.Tailwind != 0)
+                    {
+                        for (int i = 0; i < arg; i++)
+                        {
+                            BattleLogic.DrawCardToHand();
+                        }
+                    }
+                    Debug.Log($"乘风{m.PlayerModel.Tailwind}，抓牌{arg}");
                 }
             },
-            {            
-                EffectIds.Buff_Reflect_Self_Focus,
+            {
+                EffectIds.Elemental_Air_Windborne,
                 (m, cm, id, arg, index, usageContext) =>
                 {
-                    m.PlayerModel.IsFocusCondition = true;
-                    m.PlayerModel.FocusArgs = arg;
-                    BuffLogic.ApplyBuff(m.PlayerModel, BuffIds.Reflect, arg);
-                    Debug.Log($"[Effect] Buff_Reflect_Self: 玩家增加 {arg} 层反射");
-                    Debug.Log($"[Effect] Draw_Focus: 设置受伤标志位");
+                    if (m.PlayerModel.Tailwind != 0)
+                    {
+                        AddResource(m, CardBaseType.Air, arg);
+                    }
+                    Debug.Log($"乘风{m.PlayerModel.Tailwind}，加气{arg}");
+                }
+            },
+            {
+                EffectIds.Catalyze_Windborne,
+                (m, cm, id, arg, index, usageContext) =>
+                {
+                    var playerView = UISystem.Instance.GetCommonView<InGamePlayerView>("InGame/Player");
+                    var enemyView = UISystem.Instance.GetCommonView<InGameEnemyView>("InGame/Enemy");
+
+                    var enemy = m.EnemyModel;
+                    int newHP = enemy.Health;
+                    int newATK = enemy.Attack;
+                    int newREW = enemy.Reward;
+
+                    switch (index)
+                    {
+                        case 0: // HP
+                            newHP += arg;
+                            BattleAnimSystem.Instance.QueueDamagePopup(enemyView.GetHealthText().transform.position, arg);
+                            BattleAnimSystem.Instance.QueuePlayEnemyHealthChangeAnim(enemy.Health, newHP);
+                            enemy.SetHealthWithoutNotify(newHP);
+                            Debug.Log($"[Effect] Catalyze: 敌人HP +{arg} => HP {newHP}");
+                            break;
+                        case 1: // Attack
+                            newATK += arg;
+
+                            //敌方有HighReactivity时攻击不受影响
+                            if (m.EnemyModel.CheckBuffByID(BuffIds.HighReactivity) == true)
+                            {
+                                BattleAnimSystem.Instance.QueueDamagePopup(enemyView.GetAttackText().transform.position, 0);
+                                break;
+                            }
+
+                            BattleAnimSystem.Instance.QueueDamagePopup(enemyView.GetAttackText().transform.position, arg);
+                            //攻击力不能低于0
+                            if (newATK <= 0)
+                            {
+                                enemy.SetAttackWithoutNotify(0);
+                                BattleAnimSystem.Instance.QueueEnemyAttackChangeAnim(enemy.Attack, 0);
+                            }
+                            else
+                            {
+                                BattleAnimSystem.Instance.QueueEnemyAttackChangeAnim(enemy.Attack, newATK);
+                                enemy.SetAttackWithoutNotify(newATK);
+                            }
+                            Debug.Log($"[Effect] Catalyze: 敌人Attack +{arg} => ATK {newATK}");
+                            break;
+                        case 2: // Reward
+                            newREW += arg;
+                            BattleAnimSystem.Instance.QueueDamagePopup(enemyView.GetRewardText().transform.position, arg);
+                            BattleAnimSystem.Instance.QueueEnemyRewardChangeAnim(enemy.Reward, newREW);
+                            enemy.SetRewardWithoutNotify(newREW);
+                            Debug.Log($"[Effect] Catalyze: 敌人Reward +{arg} => REW {newREW}");
+                            break;
+                        default:
+                            Debug.LogWarning($"[Effect] Catalyze: 无效的 effectIndex {index}");
+                            break;
+                    }
+                }
+            },
+            {
+                EffectIds.Heal_Windborne,
+                (m, cm, id, arg, index, usageContext) =>
+                {
+                    if (m.PlayerModel.Tailwind != 0)
+                    {
+                        ApplyHeal(m, arg);
+                    }
+                    Debug.Log($"乘风{m.PlayerModel.Tailwind}，治疗{arg}");
                 }
             },
 

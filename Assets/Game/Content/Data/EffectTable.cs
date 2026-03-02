@@ -118,6 +118,14 @@ namespace Game.Data {
         Buff_Reflect_Self_Focus = 51,
         
         Damage_Windborne = 52,
+        
+        Draw_Windborne = 53,
+        
+        Elemental_Air_Windborne = 54,
+        
+        Catalyze_Windborne = 55,
+        
+        Heal_Windborne = 56,
     }
     
     #region 
