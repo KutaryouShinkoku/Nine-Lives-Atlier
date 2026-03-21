@@ -37,75 +37,77 @@ namespace Game.Data {
         
         Player_Essence = 11,
         
-        Shop_Refresh = 12,
+        Player_Use = 12,
         
-        Shop_Buy = 13,
+        Shop_Refresh = 13,
         
-        Shop_Manage = 14,
+        Shop_Buy = 14,
         
-        Shop_Leave = 15,
+        Shop_Manage = 15,
         
-        Shop_Delete = 16,
+        Shop_Leave = 16,
         
-        ManageCard_Delete = 17,
+        Shop_Delete = 17,
         
-        Battle_InitialDeck = 18,
+        ManageCard_Delete = 18,
         
-        Battle_Discard = 19,
+        Battle_InitialDeck = 19,
         
-        Battle_Draw = 20,
+        Battle_Discard = 20,
         
-        ChooseLevel_Sample = 21,
+        Battle_Draw = 21,
         
-        ChooseLevel_Boss = 22,
+        ChooseLevel_Sample = 22,
         
-        ChooseLevel_Tavern = 23,
+        ChooseLevel_Boss = 23,
         
-        Intro_Buff = 24,
+        ChooseLevel_Tavern = 24,
         
-        Intro_Properties = 25,
+        Intro_Buff = 25,
         
-        Card_Surge = 26,
+        Intro_Properties = 26,
         
-        Card_Madness = 27,
+        Card_Surge = 27,
         
-        Card_Unstable = 28,
+        Card_Madness = 28,
         
-        Card_Neutralize = 29,
+        Card_Unstable = 29,
         
-        Card_Catalyze = 30,
+        Card_Neutralize = 30,
         
-        Card_Burn = 31,
+        Card_Catalyze = 31,
         
-        Card_Stun = 32,
+        Card_Burn = 32,
         
-        Card_Peace = 33,
+        Card_Stun = 33,
         
-        Card_Cooldown = 34,
+        Card_Peace = 34,
         
-        Card_Calm = 35,
+        Card_Cooldown = 35,
         
-        Card_Swift = 36,
+        Card_Calm = 36,
         
-        Card_Recycle = 37,
+        Card_Swift = 37,
         
-        Card_Sturdy = 38,
+        Card_Recycle = 38,
         
-        Card_Reflect = 39,
+        Card_Sturdy = 39,
         
-        Card_Focus = 40,
+        Card_Reflect = 40,
         
-        Card_Tailwind = 41,
+        Card_Focus = 41,
         
-        Card_Windborne = 42,
+        Card_Tailwind = 42,
         
-        Lable_Fragile = 43,
+        Card_Windborne = 43,
         
-        Lable_Toxic = 44,
+        Lable_Fragile = 44,
         
-        Lable_HighTemp = 45,
+        Lable_Toxic = 45,
         
-        Lable_MagicLock = 46,
+        Lable_HighTemp = 46,
+        
+        Lable_MagicLock = 47,
     }
     
     #region 

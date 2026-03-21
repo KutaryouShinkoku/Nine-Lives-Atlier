@@ -23,7 +23,9 @@ namespace Game.Data {
         
         Earth = 4,
         
-        FireWater = 5,
+        Air = 5,
+        
+        FireWater = 6,
     }
     
     #region 
