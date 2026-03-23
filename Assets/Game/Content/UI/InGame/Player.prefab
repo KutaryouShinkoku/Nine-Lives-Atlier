@@ -2432,8 +2432,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tips:
-  - title: Tip_Player_Elemental_Air
-    content: Tip_Player_Elemental_Air_Desc
+  - title: Tip_Player_Elemental_Water
+    content: Tip_Player_Elemental_Water_Desc
     color: {r: 0.094019204, g: 0.3584906, b: 0.35234007, a: 1}
   regionType: 0
   positionType: 1
@@ -2783,8 +2783,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tips:
-  - title: Tip_Player_Elemental_Air
-    content: Tip_Player_Elemental_Air_Desc
+  - title: Tip_Player_Elemental_Earth
+    content: Tip_Player_Elemental_Earth_Desc
     color: {r: 0.26690167, g: 0.3509434, b: 0.10528298, a: 1}
   regionType: 0
   positionType: 1
