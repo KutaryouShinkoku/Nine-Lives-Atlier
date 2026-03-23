@@ -350,14 +350,13 @@ namespace Game.Logic
                     {
                         // 清除所有燃烧 Buff
                         var buffs = m.PlayerModel.Buffs;
-                        for (int i = buffs.Count - 1; i >= 0; i--)
+                        for (int i = buffs.Count - 1; i > 0; i--)
                         {
                             if (buffs[i].Id == BuffIds.Burning)
                                 buffs.RemoveAt(i);
                         }
+                        ApplyEnemyDamage(m.EnemyModel, arg);
                     }
-
-                    ApplyEnemyDamage(m.EnemyModel, arg);
                 }
             },
             {
@@ -369,14 +368,13 @@ namespace Game.Logic
                     {
                         // 清除所有燃烧 Buff
                         var buffs = m.PlayerModel.Buffs;
-                        for (int i = buffs.Count - 1; i >= 0; i--)
+                        for (int i = buffs.Count - 1; i > 0; i--)
                         {
                             if (buffs[i].Id == BuffIds.Burning)
                                 buffs.RemoveAt(i);
                         }
+                        DrawCards(arg);
                     }
-
-                    DrawCards(arg);
                 }
             },
             {
@@ -398,15 +396,14 @@ namespace Game.Logic
                     {
                         // 清除所有燃烧 Buff
                         var buffs = m.PlayerModel.Buffs;
-                        for (int i = buffs.Count - 1; i >= 0; i--)
+                        for (int i = buffs.Count - 1; i > 0; i--)
                         {
                             if (buffs[i].Id == BuffIds.Burning)
                                 buffs.RemoveAt(i);
                         }
+                        BuffLogic.ApplyBuff(m.PlayerModel, BuffIds.Calm, arg);
+                        Debug.Log($"[Effect] Buff_Calm: 玩家增加 {arg} 层冷静");
                     }
-
-                    BuffLogic.ApplyBuff(m.PlayerModel, BuffIds.Calm, arg);
-                    Debug.Log($"[Effect] Buff_Calm: 玩家增加 {arg} 层冷静");
                 }
             },
             //Peace
