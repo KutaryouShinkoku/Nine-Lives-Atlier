@@ -480,24 +480,17 @@ namespace Game.Logic
         }
 
         /// <summary>
-        /// 回合内结算效果
+        /// 处理集中
         /// </summary>
-        public static void TurnSettlement()
+        public static void FocusCheck()
         {
             var battleModel = DataModel<BattleModel>.Instance;
             var playerModel = battleModel.PlayerModel;
 
-            Debug.Log($"回合内结算效果：集中条件 => {playerModel.IsFocusCondition}, 集中参数 => {playerModel.FocusArgs}");
-            // 处理集中条件
-            if (playerModel.IsFocusCondition)
-            {
-                playerModel.IsFocusCondition = false;
-                for(int i = 0; i < playerModel.FocusArgs; i++)
-                {
-                    DrawCardToHand();
-                }
-            }
-            
+            Debug.Log($"上回合集中状态 => {playerModel.IsFocusCondition}, 集中参数 => {playerModel.FocusArgs}");
+            // 重置集中为true
+            playerModel.IsFocusCondition = true;
+            Debug.Log($"集中被重置为{playerModel.IsFocusCondition}");
         }
 
         /// <summary>

@@ -468,45 +468,38 @@ namespace Game.Logic
                 EffectIds.Draw_Focus,
                 (m, cm, id, arg, index, usageContext) =>
                 {
-                    m.PlayerModel.IsFocusCondition = true;
-                    m.PlayerModel.FocusArgs = arg;
+                    //Debug.Log($"要处理集中了，这个时候集中是{m.PlayerModel.IsFocusCondition}");
                     for(int i = 0; i < arg; i++)
                     {
-                        BattleLogic.DrawCardToHand();
+                        DrawCardToHand();
                     }
-                    Debug.Log($"[Effect] Draw_Focus: 设置受伤标志位");
+                    Debug.Log($"[Effect] Draw_Focus: 集中触发抓牌，数量为{arg}");
                 }
             },
             {            
                 EffectIds.Damage_Focus,
                 (m, cm, id, arg, index, usageContext) =>
                 {
-                    m.PlayerModel.IsFocusCondition = true;
-                    m.PlayerModel.FocusArgs = arg;
                     ApplyEnemyDamage(m.EnemyModel, arg);
-                    Debug.Log($"[Effect] Draw_Focus: 设置受伤标志位");
+                    Debug.Log($"[Effect] Damage_Focus: 集中触发伤害");
                 }
             },
             {
                 EffectIds.Buff_Sturdy_Self_Focus,
                 (m, cm, id, arg, index, usageContext) =>
                 {
-                    m.PlayerModel.IsFocusCondition = true;
                     m.PlayerModel.FocusArgs = arg;
                     BuffLogic.ApplyBuff(m.PlayerModel, BuffIds.Sturdy, arg);
-                    Debug.Log($"[Effect] Buff_Sturdy_Self: 玩家增加 {arg} 层坚固");
-                    Debug.Log($"[Effect] Draw_Focus: 设置受伤标志位");
+                    Debug.Log($"[Effect] Buff_Sturdy_Self: 集中触发，玩家增加 {arg} 层坚固");
                 }
             },
             {
                 EffectIds.Buff_Reflect_Self_Focus,
                 (m, cm, id, arg, index, usageContext) =>
                 {
-                    m.PlayerModel.IsFocusCondition = true;
                     m.PlayerModel.FocusArgs = arg;
                     BuffLogic.ApplyBuff(m.PlayerModel, BuffIds.Reflect, arg);
-                    Debug.Log($"[Effect] Buff_Reflect_Self: 玩家增加 {arg} 层反射");
-                    Debug.Log($"[Effect] Draw_Focus: 设置受伤标志位");
+                    Debug.Log($"[Effect] Buff_Reflect_Self: 集中触发，玩家增加 {arg} 层反射");
                 }
             },
 
@@ -768,6 +761,7 @@ namespace Game.Logic
         // 对玩家造成伤害
         public static void ApplyPlayerDamage(PlayerModel playerModel, int damage, bool fromEntity = false)
         {
+            //看起来目前的方法有一个问题，就是不区分上一个伤害的来源。因此会出现玩家用了一张自伤卡牌然后触发一大堆东西的情况。之后要加一个来源的检查。
             // 1. 读取“坚固”层数
             int sturdyStack = 0, sturdyIdx = -1;
             for (int i = 0; i < playerModel.Buffs.Count; i++)
@@ -964,7 +958,10 @@ namespace Game.Logic
                     //若没有手牌(出的这张是最后一张手牌），则触发
                     return model.HandCards.Count == 1;
                 case CardCondition.Focus:
+                    if (usageContext != CardUseContext.Use)
+                        return false;
                     //若此次行动没有受到伤害，则触发，需要延迟结算
+                    return model.PlayerModel.IsFocusCondition;
                     return true;
                 default:
                     Debug.LogWarning($"未知的 CardCondition: {condition}");

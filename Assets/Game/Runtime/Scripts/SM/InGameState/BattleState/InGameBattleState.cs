@@ -243,13 +243,14 @@ namespace Game.SM.InGameState.BattleState
                 default:
                     throw new ArgumentOutOfRangeException(nameof(interaction), interaction, null);
             }
-
+            
+            // 刷新集中状态
+            BattleLogic.FocusCheck();
             // 敌人攻击玩家一次
             BattleLogic.EnemyAttack();
             // 结算Buff
             BattleLogic.ApplyBuffs();
-            // 处理回合内结算效果
-            BattleLogic.TurnSettlement();
+
         }
         private async UniTask BattleAnim(CancellationToken token)
         {
