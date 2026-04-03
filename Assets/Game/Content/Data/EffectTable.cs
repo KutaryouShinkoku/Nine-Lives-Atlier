@@ -126,6 +126,12 @@ namespace Game.Data {
         Catalyze_Windborne = 55,
         
         Heal_Windborne = 56,
+        
+        Damage_Aftermath = 57,
+        
+        Draw_Aftermath = 58,
+        
+        Heal_Aftermath = 59,
     }
     
     #region 

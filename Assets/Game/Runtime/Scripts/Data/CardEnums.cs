@@ -46,7 +46,9 @@ namespace Game.Data
         Unstable,
         Cooldown,
         Peace,
-        Focus
+        Focus,
+        Windborne,
+        Aftermath
     }
 
     /// <summary>

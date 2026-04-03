@@ -509,10 +509,8 @@ namespace Game.Logic
                 EffectIds.Damage_Windborne,
                 (m, cm, id, arg, index, usageContext) =>
                 {
-                    if (m.PlayerModel.Tailwind != 0)
-                    {
-                        ApplyEnemyDamage(m.EnemyModel, arg);
-                    }
+                    ApplyEnemyDamage(m.EnemyModel, arg);
+
                     Debug.Log($"乘风{m.PlayerModel.Tailwind}，总伤害为{arg}");
                 }
             },
@@ -520,12 +518,9 @@ namespace Game.Logic
                 EffectIds.Draw_Windborne,
                 (m, cm, id, arg, index, usageContext) =>
                 {
-                    if (m.PlayerModel.Tailwind != 0)
+                    for (int i = 0; i < arg; i++)
                     {
-                        for (int i = 0; i < arg; i++)
-                        {
-                            BattleLogic.DrawCardToHand();
-                        }
+                        BattleLogic.DrawCardToHand();
                     }
                     Debug.Log($"乘风{m.PlayerModel.Tailwind}，抓牌{arg}");
                 }
@@ -534,10 +529,7 @@ namespace Game.Logic
                 EffectIds.Elemental_Air_Windborne,
                 (m, cm, id, arg, index, usageContext) =>
                 {
-                    if (m.PlayerModel.Tailwind != 0)
-                    {
-                        AddResource(m, CardBaseType.Air, arg);
-                    }
+                    AddResource(m, CardBaseType.Air, arg);
                     Debug.Log($"乘风{m.PlayerModel.Tailwind}，加气{arg}");
                 }
             },
@@ -603,11 +595,41 @@ namespace Game.Logic
                 EffectIds.Heal_Windborne,
                 (m, cm, id, arg, index, usageContext) =>
                 {
-                    if (m.PlayerModel.Tailwind != 0)
-                    {
-                        ApplyHeal(m, arg);
-                    }
+                    ApplyHeal(m, arg);
                     Debug.Log($"乘风{m.PlayerModel.Tailwind}，治疗{arg}");
+                }
+            },
+
+            //Aftermath
+            {
+                EffectIds.Damage_Aftermath,
+                (m, cm, id, arg, index, usageContext) =>
+                {
+                    ApplyEnemyDamage(m.EnemyModel, arg);
+
+                    Debug.Log($"余响触发，总伤害为{arg}");
+                }
+            },
+
+            {
+                EffectIds.Draw_Aftermath,
+                (m, cm, id, arg, index, usageContext) =>
+                {
+                    for (int i = 0; i < arg; i++)
+                    {
+                        DrawCardToHand();
+                    }
+
+                    Debug.Log($"余响触发，总伤害为{arg}");
+                }
+            },
+
+            {
+                EffectIds.Heal_Aftermath,
+                (m, cm, id, arg, index, usageContext) =>
+                {
+                    ApplyHeal(m, arg);
+                    Debug.Log($"余响触发，总治疗为{arg}");
                 }
             },
 
@@ -929,10 +951,10 @@ namespace Game.Logic
                 case CardCondition.Surge:
                     if (usageContext != CardUseContext.Use)
                         return false;
-                    // 涨动：玩家拥有和卡牌类型相同元素的数量不小于阈值
+                    // 涌动：玩家拥有和卡牌类型相同元素的数量不小于阈值
                     return HasSurgeCondition(model, cardModel.Id.Data().Type, model.PlayerModel.CharacterId.Data().SurgeThreshold);
                 case CardCondition.Madness:
-                    // 疯魔：只有在 Discard 场景下才触发
+                    // 流转：只有在 Discard 场景下才触发
                     return usageContext == CardUseContext.Discard;
                 case CardCondition.Unstable:
                     {
@@ -962,6 +984,15 @@ namespace Game.Logic
                         return false;
                     //若此次行动没有受到伤害，则触发，需要延迟结算
                     return model.PlayerModel.IsFocusCondition;
+                case CardCondition.Windborne:
+                    if (usageContext != CardUseContext.Use)
+                        return false;
+                    //若乘风计数不为0，也就是上一个行动是使用牌，则触发
+                    return model.PlayerModel.Tailwind > 0;
+                case CardCondition.Aftermath:
+                    //余响：被献祭时触发
+                    if (usageContext != CardUseContext.Sacrifice)
+                        return false;
                     return true;
                 default:
                     Debug.LogWarning($"未知的 CardCondition: {condition}");

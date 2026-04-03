@@ -325,15 +325,15 @@ namespace Game.Logic
             battleModel.PlayerModel.SetResourcesWithoutNotify(battleModel.PlayerModel.Resources - totalCost);
             Debug.Log($"使用卡牌：扣除费用 => {totalCost.Fire}/{totalCost.Water}/{totalCost.Earth}/{totalCost.Air}");
             
-            // 乘风
-            battleModel.PlayerModel.Tailwind++;
-            BattleAnimSystem.Instance.PlayGaugesValueChangeAnim(battleModel.PlayerModel.Tailwind,0.1f);
-            Debug.Log($"乘风中，当前为{battleModel.PlayerModel.Tailwind}");
 
             // 结算卡牌效果(场景=Use)
             ProcessCardEffects(battleModel, cardModel, cardData, CardUseContext.Use);
             BattleAnimSystem.Instance.QueueSetCardVisibility(handCardIndex, false);
 
+            // 乘风
+            battleModel.PlayerModel.Tailwind++;
+            BattleAnimSystem.Instance.PlayGaugesValueChangeAnim(battleModel.PlayerModel.Tailwind, 0.1f);
+            Debug.Log($"乘风中，当前为{battleModel.PlayerModel.Tailwind}");
         }
 
         /// <summary>
